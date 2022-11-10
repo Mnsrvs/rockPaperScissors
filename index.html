@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/4dea23a21b.js" crossorigin="anonymous"></script>
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="game">
+
+      <h1>Rock Paper Scissors</h1>
+
+      <div class="scoreBoard">
+        <div class="playerScoreBoard">
+          <h2>Player</h2>
+          <p id="playerScore">0</p>
+        </div>
+
+        <div class="computerScoreBoard">
+          <h2>Computer</h2>
+          <p id="computerScore">0</p>
+        </div>
+      </div>
+
+      <div class="icons">
+        <div class="player">
+          <div class="playerRock"><i class="fa-solid fa-hand-back-fist"></i></div>
+          <div class="playerPaper"><i class="fa-solid fa-hand"></i></div>
+          <div class="playerScissors"><i class="fa-solid fa-hand-scissors"></i></div>
+        </div>
+        <div class="computer">
+          <div class="computerRock"><i class="fa-solid fa-hand-back-fist"></i></div>
+          <div class="computerPaper"><i class="fa-solid fa-hand"></i></div>
+          <div class="computerScissors"><i class="fa-solid fa-hand-scissors"></i></div>
+        </div>
+      </div>
+      <div class="resultContainer">
+        <h1 id="result"></h1>
+        <h1 id="round"></h1>
+      </div>
+      <div class="buttons">
+        <button id="chooseRock" class="btn">Rock</button>
+        <button id="choosePaper" class="btn">Paper</button>
+        <button id="chooseScissors" class="btn">Scissors</button>
+      </div>
+      <div class="resetBtn">
+        <button id="playBtn">Play Again?</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

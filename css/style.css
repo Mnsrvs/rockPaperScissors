@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(25, 25, 25);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.container {
+  background-color: rgb(25, 25, 25);
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.game h1 {
+  color: rgb(200, 75, 49);
+}
+
+.scoreBoard {
+  display: flex;
+  justify-content:  space-around;
+  align-items: center;
+  color: rgb(200, 75, 49);
+  width: 100%;
+}
+
+.playerScoreBoard,
+.computerScoreBoard {
+  width: 50%;
+}
+
+#playerScore,
+#computerScore {
+  font-size: 50px;
+  color: rgb(236, 219, 186);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.player,
+.computer {
+  padding: 20px;
+  width: 50%;
+}
+
+
+.playerPaper,
+.playerScissors,
+.computerPaper,
+.computerScissors {
+  display: none;
+  font-size: 250px;
+  color: rgb(236, 219, 186);
+}
+
+.playerRock,
+.computerRock {
+  font-size: 250px;
+  color: rgb(236, 219, 186);
+}
+
+.playerRock .fa-hand-back-fist,
+.playerPaper .fa-hand {
+  transform: rotate(90deg);
+}
+
+.playerScissors .fa-hand-scissors {
+  transform: scaleX(-1);
+}
+
+.computerRock .fa-hand-back-fist,
+.computerPaper .fa-hand {
+  transform: rotate(270deg) scaleX(-1);
+}
+
+.resultContainer {
+  margin-bottom: 30px;
+}
+
+#result {
+  margin-top: -50px;
+}
+
+.btn {
+  padding: 2rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(236, 219, 186);
+  margin: 0 5px;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: transform .5s;
+  color: rgb(25, 25, 25);
+}
+
+.btn:hover {
+  background-color: rgb(255, 241, 213);
+  transform: scale(1.1);
+}
+
+.resetBtn {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+#playBtn {
+  padding: 2rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(236, 219, 186);
+  margin: 0 5px;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: transform .5s;
+  color: rgb(25, 25, 25);
+}
+
+#playBtn:hover {
+  transform: scale(1.1);
+  background-color: rgb(255, 241, 213);
+}
