@@ -119,7 +119,7 @@ body {
 }
 
 .resetBtn {
-  position: fixed;
+  position: absolute;
   top: 40%;
   right: 0;
   bottom: 0;
